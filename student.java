@@ -139,8 +139,27 @@ public class student {
 
 
                 case 4:
-                    System.out.println("delete student");
+                    System.out.println("delete student with admission no:");
 
+                    System.out.println("Enter admission no:");
+                    Scanner sc6=new Scanner(System.in);
+                    int admin1=sc6.nextInt();
+
+                    int flag1=0;
+                    for (student s3: studnt)
+                    {
+                        if(admin1==s3.adminNo)
+                        {
+                            flag1=1;
+                            System.out.println("Student "+s3.name+" deleted\n");
+
+                            studnt.remove(s3);
+                        }
+                    }
+                    if(flag1==0)
+                    {
+                        System.out.println("Student not found\n");
+                    }
                     break;
 
                 case 5:

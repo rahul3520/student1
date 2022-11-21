@@ -97,7 +97,17 @@ public class student {
                     break;
 
                 case 2:
-                    System.out.println("list student");
+                    System.out.println("list students");
+
+                    for(student st1:studnt)
+                    {
+                        System.out.println(st1.name);
+                        System.out.println(st1.adminNo);
+                        System.out.println(st1.collegeName);
+                        System.out.println(st1.rollNo);
+                        System.out.println("\n");
+
+                    }
 
                     break;
 

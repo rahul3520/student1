@@ -55,7 +55,7 @@ public class student {
         int exit =0;
         while(exit!=1)
         {
-            System.out.println("1:add student\n2:list student\n3:search student\n4:delete student\n");
+            System.out.println("1:add student\n2:list student\n3:search student\n4:delete student\n5:exit");
             System.out.println("Enter your choice:");
 
             Scanner sc=new Scanner(System.in);
@@ -66,6 +66,33 @@ public class student {
             {
                 case 1:
                     System.out.println("add student");
+
+                    System.out.println("Enter student name:");
+                    String str=new String();
+                    Scanner sc1=new Scanner(System.in);
+
+                    str= sc1.nextLine();
+
+                    System.out.println("Enter student admission no:");
+                    Scanner sc2=new Scanner(System.in);
+
+                    int num= sc2.nextInt();
+
+
+                    System.out.println("Enter college name:");
+                    String str1=new String();
+                    Scanner sc3=new Scanner(System.in);
+
+                    str1= sc3.nextLine();
+
+                    System.out.println("Enter student roll no:");
+                    Scanner sc4=new Scanner(System.in);
+
+                    int num1= sc4.nextInt();
+
+
+                    student s1=new student(str,num,str1,num1);
+                    studnt.add(s1);
 
                     break;
 

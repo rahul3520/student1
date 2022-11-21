@@ -107,12 +107,33 @@ public class student {
                         System.out.println(st1.rollNo);
                         System.out.println("\n");
 
+                        //student st2=new student();
+                        //studnt.st2.name
+                        //st2.get(i)
                     }
 
                     break;
 
                 case 3:
-                    System.out.println("search student");
+                    System.out.println("search student with admission no");
+
+                    System.out.println("Enter admission no:");
+                    Scanner sc5=new Scanner(System.in);
+                    int admin=sc5.nextInt();
+
+                    int flag=0;
+                    for (student s2: studnt)
+                    {
+                        if(admin==s2.adminNo)
+                        {
+                            flag=1;
+                            System.out.println("Student found\n");
+                        }
+                    }
+                    if(flag==0)
+                    {
+                        System.out.println("Student not found\n");
+                    }
 
                     break;
 
